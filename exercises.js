@@ -1,6 +1,9 @@
 // Question 1
-const isRealPalindrome = () => {
-
+const isRealPalindrome = (str) => {
+const regex = /[^A-Z09]/gi
+const newStr = str.toLowerCase().replace(regex,"")
+const reverseNewStr = newStr.split("").reverse().join("")
+return newStr === reverseNewStr
 };
 
 // Question 2

@@ -1,10 +1,11 @@
 const exercises = require('./exercises');
 
-//write tests in this file
 
-/* Example Test 
-test('Question 0: add', () => {
-  expect(exercises.add(1, 2)).toEqual(3);
-  expect(exercises.add(1, -1)).toEqual(0);
+test('Question 1: isRealPalindrome', () => {
+  expect(exercises.isRealPalindrome('madam')).toBe(true);
+  expect(exercises.isRealPalindrome('Madam')).toBe(true);
+  expect(exercises.isRealPalindrome("Madam, I'm Adam")).toBe(true);
+  expect(exercises.isRealPalindrome('356653')).toBe(true);
+  expect(exercises.isRealPalindrome('123ab321')).toBe(false);
 });
-*/
+
