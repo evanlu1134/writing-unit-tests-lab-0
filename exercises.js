@@ -7,8 +7,9 @@ return newStr === reverseNewStr
 };
 
 // Question 2
-const runningTotal = () => {
-
+const runningTotal = (arr) => {
+  let sum = 0
+  return arr.map(vals => sum += vals)
 };
 
 // Question 3
