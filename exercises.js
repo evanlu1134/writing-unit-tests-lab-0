@@ -36,8 +36,8 @@ const firstRecurring = (str) => {
 };
 
 // Question 7
-const showMultiplicativeAverage = () => {
-
+const showMultiplicativeAverage = (arr) => {
+  return (arr.reduce((prevNum,nextNum) => prevNum * nextNum,1)/arr.length).toFixed(3)
 };
 
 // Quetsion 8

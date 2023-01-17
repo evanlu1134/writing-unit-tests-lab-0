@@ -40,6 +40,11 @@ test('Question 6: firstRecurring', () => {
   expect(exercises.firstRecurring('paul')).toBe("");
 });
 
+test('Question 7: showMultiplicativeAverage', () => {
+  expect(exercises.showMultiplicativeAverage([3, 5])).toBe("7.500");
+  expect(exercises.showMultiplicativeAverage([2, 5, 7, 11, 13, 17])).toBe("28361.667");
+});
+
 
 test('Question 9: sequence', () => {
   expect(exercises.sequence(5)).toEqual([1, 2, 3, 4, 5]);
