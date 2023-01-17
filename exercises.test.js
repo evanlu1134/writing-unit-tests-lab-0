@@ -15,3 +15,15 @@ expect(exercises.runningTotal([14, 11, 7, 15, 20])).toEqual([14, 25, 32, 47, 67]
 expect(exercises.runningTotal([3])).toEqual([3]);                   
 expect(exercises.runningTotal([])).toEqual([]);                    
 });
+
+test('Question 3: swap', () => {
+  expect(exercises.swap('Oh what a wonderful day it is')).toBe("hO thaw a londerfuw yad ti si");
+  expect(exercises.swap('Abcde')).toBe("ebcdA");
+  expect(exercises.swap('a')).toBe("a");
+});
+
+test('Question 9: sequence', () => {
+  expect(exercises.sequence(5)).toEqual([1, 2, 3, 4, 5]);
+  expect(exercises.sequence(3)).toEqual([1, 2, 3]);
+  expect(exercises.sequence(1)).toEqual([1]);            
+  });
