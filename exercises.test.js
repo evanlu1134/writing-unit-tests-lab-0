@@ -22,6 +22,13 @@ test('Question 3: swap', () => {
   expect(exercises.swap('a')).toBe("a");
 });
 
+test('Question 4: wordSizes', () => {
+  expect(exercises.wordSizes('Four score and seven.')).toEqual({ "3": 1, "4": 1, "5": 1, "6": 1 });
+  expect(exercises.wordSizes("What's up doc?")).toEqual({ "2": 1, "4": 1, "6": 1 });
+  expect(exercises.wordSizes("I ate her lunch")).toEqual({ "1": 1, "3": 2, "5": 1 });
+});
+
+
 test('Question 9: sequence', () => {
   expect(exercises.sequence(5)).toEqual([1, 2, 3, 4, 5]);
   expect(exercises.sequence(3)).toEqual([1, 2, 3]);

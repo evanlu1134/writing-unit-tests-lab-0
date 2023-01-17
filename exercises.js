@@ -15,13 +15,16 @@ const runningTotal = (arr) => {
 // Question 3
 const swap = (str) => {
   const newArr = str.split(" ")
-  return newArr.map(word =>
-    (word.length !== 1 ? word[word.length - 1] + word.slice(1, word.length - 1) + word[0] : word)).join(" ")
+  return newArr.map(word => (word.length !== 1 ? word[word.length - 1] + word.slice(1, word.length - 1) + word[0] : word)).join(" ")
 };
 
 // Question 4
-const wordSizes = () => {
-
+const wordSizes = (str) => {
+  const obj = {}
+  for(const word of str.split(" ")){
+    !obj[word.length] ? obj[word.length] = 1 : obj[word.length] += 1
+  }
+  return obj
 };
 
 // Question 5
