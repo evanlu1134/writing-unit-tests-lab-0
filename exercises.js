@@ -21,15 +21,13 @@ const swap = (str) => {
 // Question 4
 const wordSizes = (str) => {
   const obj = {}
-  for(const word of str.split(" ")){
-    !obj[word.length] ? obj[word.length] = 1 : obj[word.length] += 1
-  }
+  str.split(" ").forEach(word => !obj[word.length] ? obj[word.length] = 1 : obj[word.length] += 1)
   return obj
 };
 
 // Question 5
-const union = () => {
-
+const union = (arr1,arr2) => {
+  return [...new Set(arr1.concat(arr2))]
 };
 
 // Question 6

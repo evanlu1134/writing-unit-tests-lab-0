@@ -28,6 +28,10 @@ test('Question 4: wordSizes', () => {
   expect(exercises.wordSizes("I ate her lunch")).toEqual({ "1": 1, "3": 2, "5": 1 });
 });
 
+test('Question 5: union', () => {
+  expect(exercises.union([1, 3, 5], [3, 6, 9])).toEqual([1, 3, 5, 6, 9]);
+  expect(exercises.union([2, 2, 2, 2], [10, 5, 2])).toEqual([2, 10, 5]);
+});
 
 test('Question 9: sequence', () => {
   expect(exercises.sequence(5)).toEqual([1, 2, 3, 4, 5]);
