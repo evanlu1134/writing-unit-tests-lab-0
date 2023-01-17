@@ -31,8 +31,8 @@ const union = (arr1,arr2) => {
 };
 
 // Question 6
-const firstRecurring = () => {
-
+const firstRecurring = (str) => {
+  return str.split("").filter((letter,index) => str.indexOf(letter) !== index)[0] || ""
 };
 
 // Question 7

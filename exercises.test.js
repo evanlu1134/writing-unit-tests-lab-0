@@ -33,6 +33,14 @@ test('Question 5: union', () => {
   expect(exercises.union([2, 2, 2, 2], [10, 5, 2])).toEqual([2, 10, 5]);
 });
 
+test('Question 6: firstRecurring', () => {
+  expect(exercises.firstRecurring('reuben')).toBe("e");
+  expect(exercises.firstRecurring('anne')).toBe("n");
+  expect(exercises.firstRecurring('restaurant')).toBe("r");
+  expect(exercises.firstRecurring('paul')).toBe("");
+});
+
+
 test('Question 9: sequence', () => {
   expect(exercises.sequence(5)).toEqual([1, 2, 3, 4, 5]);
   expect(exercises.sequence(3)).toEqual([1, 2, 3]);
