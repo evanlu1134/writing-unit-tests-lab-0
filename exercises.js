@@ -41,7 +41,8 @@ const showMultiplicativeAverage = (arr) => {
 };
 
 // Quetsion 8
-const multiplyList = () => {
+const multiplyList = (arr1,arr2) => {
+  return arr1.map((val,index) => val * arr2[index])
 };
 
 // Question 9

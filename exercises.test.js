@@ -1,6 +1,5 @@
 const exercises = require('./exercises');
 
-
 test('Question 1: isRealPalindrome', () => {
   expect(exercises.isRealPalindrome('madam')).toBe(true);
   expect(exercises.isRealPalindrome('Madam')).toBe(true);
@@ -45,6 +44,10 @@ test('Question 7: showMultiplicativeAverage', () => {
   expect(exercises.showMultiplicativeAverage([2, 5, 7, 11, 13, 17])).toBe("28361.667");
 });
 
+test('Question 8: multiplyList', () => {
+  expect(exercises.multiplyList([3, 5, 7], [9, 10, 11])).toEqual([27, 50, 77]);
+  expect(exercises.multiplyList([5, 10, 15, 20], [1, 2, 3, 4])).toEqual([5, 20, 45, 80]);
+});
 
 test('Question 9: sequence', () => {
   expect(exercises.sequence(5)).toEqual([1, 2, 3, 4, 5]);
